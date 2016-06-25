@@ -1,0 +1,20 @@
+Fix bug that makes bananas set to bunch
+Make banana updates update mainWindow.stageLayout
+
+Decouple panes
+  Extract shared update logic
+  Bring data out of mainwindow (tpl / gma)
+
+Reorganize file menu
+
+Add settings window
+Add application settings for projects path
+Make project path variable, load project button -> OFD -> set folder path
+
+Make stagelayout items editable, + add and remove
+Save lz and test
+
+Allow renaming stages
+Allow adding and removing stages
+
+Remove copygrighted material?

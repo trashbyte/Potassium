@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+	<stages>
+		<stage>
+			<name>Blank</name>
+			<replaces>1</replaces>
+		</stage>
+	</stages>
+</project>

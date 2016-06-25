@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{407E4B49-2E78-498D-95D0-176B476C5B68}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Potassium</RootNamespace>
+    <AssemblyName>Potassium</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\References\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibGC\LibGC.csproj">
+      <Project>{f720fe95-f774-4e85-a40a-edb931ba59dc}</Project>
+      <Name>LibGC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="src\ByteArrayUtils.cs" />
+    <Compile Include="src\ExpanderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ExpanderForm.Designer.cs">
+      <DependentUpon>ExpanderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\GxExpander.cs" />
+    <Compile Include="src\GxExpanderException.cs" />
+    <Compile Include="src\LoadSaveTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\LoadSaveTest.Designer.cs">
+      <DependentUpon>LoadSaveTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\ModelMaterialReference.cs" />
+    <Compile Include="src\ModelMeshReference.cs" />
+    <Compile Include="src\ObjMtlWarningLogDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\ObjMtlWarningLogDialog.Designer.cs">
+      <DependentUpon>ObjMtlWarningLogDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\OldWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\OldWindow.designer.cs">
+      <DependentUpon>OldWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PaneMaterials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\PaneMaterials.Designer.cs">
+      <DependentUpon>PaneMaterials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PaneModels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\PaneModels.Designer.cs">
+      <DependentUpon>PaneModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PaneProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\PaneProject.Designer.cs">
+      <DependentUpon>PaneProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PaneStageLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\PaneStageLayout.Designer.cs">
+      <DependentUpon>PaneStageLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PaneStageViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\PaneStageViewer.Designer.cs">
+      <DependentUpon>PaneStageViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\PictureBoxZoomIfNecessary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="src\Program.cs" />
+    <Compile Include="src\Project.cs" />
+    <Compile Include="src\TextureFormatPickerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\TextureFormatPickerDialog.Designer.cs">
+      <DependentUpon>TextureFormatPickerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\TextureReference.cs" />
+    <Compile Include="src\TreeViewAutoPartialCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\ExpanderForm.resx">
+      <DependentUpon>ExpanderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\LoadSaveTest.resx">
+      <DependentUpon>LoadSaveTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\ObjMtlWarningLogDialog.resx">
+      <DependentUpon>ObjMtlWarningLogDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\OldWindow.resx">
+      <DependentUpon>OldWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PaneMaterials.resx">
+      <DependentUpon>PaneMaterials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PaneModels.resx">
+      <DependentUpon>PaneModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PaneProject.resx">
+      <DependentUpon>PaneProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PaneStageLayout.resx">
+      <DependentUpon>PaneStageLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\PaneStageViewer.resx">
+      <DependentUpon>PaneStageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\TextureFormatPickerDialog.resx">
+      <DependentUpon>TextureFormatPickerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{214B1A7C-B095-4B49-8549-A28BB6AD5B91}"
+	ProjectSection(SolutionItems) = preProject
+		TODO.txt = TODO.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Potassium", "Potassium.csproj", "{407E4B49-2E78-498D-95D0-176B476C5B68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibGC", "..\LibGC\LibGC.csproj", "{F720FE95-F774-4E85-A40A-EDB931BA59DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{407E4B49-2E78-498D-95D0-176B476C5B68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407E4B49-2E78-498D-95D0-176B476C5B68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407E4B49-2E78-498D-95D0-176B476C5B68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407E4B49-2E78-498D-95D0-176B476C5B68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F720FE95-F774-4E85-A40A-EDB931BA59DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F720FE95-F774-4E85-A40A-EDB931BA59DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F720FE95-F774-4E85-A40A-EDB931BA59DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F720FE95-F774-4E85-A40A-EDB931BA59DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
