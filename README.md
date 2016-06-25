@@ -10,7 +10,7 @@ Right now it is *very broken*. Don't try to use it for anything.
 
 ## Dependencies
 
-[LibGC](github.com/trashbyte/LibGC) (The VS solution includes the LibGC project, just clone the LibGC repo and fix the reference in the solution)
+[LibGC](https://github.com/trashbyte/LibGC) (The VS solution includes the LibGC project, just clone the LibGC repo and fix the reference in the solution)
 
 ## Contributors
 
