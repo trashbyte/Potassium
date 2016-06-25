@@ -8,9 +8,13 @@ Right now it is *very broken*. Don't try to use it for anything.
 
 **Don't**
 
+## Dependencies
+
+[LibGC](github.com/trashbyte/LibGC) (The VS solution includes the LibGC project, just clone the LibGC repo and fix the reference in the solution)
+
 ## Contributors
 
-You might want to wait until this project is a little more stable before jumping in. If you're still interested in working on it, send me an email at [github@trashbyte.io](mailto:github@trashbyte.io). Since the project is so disorganized right now, I need to make sure anyone working on in knows where I'm headed. Don't just make a pull request, I'm going to ignore it unless you've talked to me first.
+You might want to wait until this project is a little more stable before jumping in. If you're still interested in working on it, send me an email at [github@trashbyte.io](mailto:github@trashbyte.io). Since the project is so disorganized right now, I need to make sure anyone working on it knows where I'm headed. Don't just make a pull request, I'm going to ignore it unless you've talked to me first.
 
 ## License
 
