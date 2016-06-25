@@ -32,7 +32,7 @@ namespace Potassium {
 
             // Try to load the GMA file
             try {
-                string path = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\projects\\test\\" + stage.Name + "\\stage.gma");
+                string path = Path.Combine(mainWindow.ProjectPath, stage.Name, "stage.gma");
                 using (Stream gmaStream = File.OpenRead(path)) {
                     mainWindow.Gma = new Gma(gmaStream, GcGame.SuperMonkeyBall1);
                     mainWindow.GmaPath = path;
@@ -47,7 +47,7 @@ namespace Potassium {
 
             // Try to load the TPL file
             try {
-                string path = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\projects\\test\\" + stage.Name + "\\stage.tpl");
+                string path = Path.Combine(mainWindow.ProjectPath, stage.Name, "stage.tpl");
                 using (Stream tplStream = File.OpenRead(path)) {
                     mainWindow.Tpl = new Tpl(tplStream, GcGame.SuperMonkeyBall1);
                     mainWindow.TplPath = path;
@@ -63,7 +63,7 @@ namespace Potassium {
 
             // Try to load the stage layout file
             try {
-                string path = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\projects\\test\\" + stage.Name + "\\stage.layout");
+                string path = Path.Combine(mainWindow.ProjectPath, stage.Name, "stage.layout");
                 using (Stream stageLayoutStream = File.OpenRead(path)) {
                     mainWindow.StageLayout = new StageLayout(stageLayoutStream);
                     mainWindow.StageLayoutPath = path;

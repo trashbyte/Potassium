@@ -8,6 +8,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadProjectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveStageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.importGmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportGmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -17,6 +18,7 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.importStageLayoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportStageLayoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.exportObjMtlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importObjMtlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -31,8 +33,6 @@
             this.ofdLoadObj = new System.Windows.Forms.OpenFileDialog();
             this.ofdLoadStageLayout = new System.Windows.Forms.OpenFileDialog();
             this.fbdModelExportPath = new System.Windows.Forms.FolderBrowserDialog();
-            this.saveStageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,8 +81,14 @@
             // 
             this.loadProjectToolStripMenuItem.Name = "loadProjectToolStripMenuItem";
             this.loadProjectToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.loadProjectToolStripMenuItem.Text = "Load Project";
+            this.loadProjectToolStripMenuItem.Text = "Load Project...";
             this.loadProjectToolStripMenuItem.Click += new System.EventHandler(this.loadProjectToolStripMenuItem_Click);
+            // 
+            // saveStageToolStripMenuItem
+            // 
+            this.saveStageToolStripMenuItem.Name = "saveStageToolStripMenuItem";
+            this.saveStageToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.saveStageToolStripMenuItem.Text = "Save Stage";
             // 
             // toolStripSeparator3
             // 
@@ -139,6 +145,11 @@
             this.exportStageLayoutToolStripMenuItem.Name = "exportStageLayoutToolStripMenuItem";
             this.exportStageLayoutToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.exportStageLayoutToolStripMenuItem.Text = "Export Stage Layout";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(178, 6);
             // 
             // exportObjMtlToolStripMenuItem
             // 
@@ -226,17 +237,6 @@
             // fbdModelExportPath
             // 
             this.fbdModelExportPath.Description = "Select Model Export Path...";
-            // 
-            // saveStageToolStripMenuItem
-            // 
-            this.saveStageToolStripMenuItem.Name = "saveStageToolStripMenuItem";
-            this.saveStageToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.saveStageToolStripMenuItem.Text = "Save Stage";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(178, 6);
             // 
             // MainWindow
             // 

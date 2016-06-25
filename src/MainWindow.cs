@@ -4,6 +4,7 @@ using LibGC.ModelLoader;
 using LibGC.ModelRenderer;
 using LibGC.StageLayout;
 using LibGC.Tpl;
+using Ookii.Dialogs;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -19,6 +20,7 @@ namespace Potassium {
         public PaneStageLayout paneStageLayout { get; set; }
         public PaneProject paneProject { get; set; }
 
+        public string ProjectPath { get; set; }
         Project project;
 
         private ExpanderForm expanderForm;
@@ -401,8 +403,16 @@ namespace Potassium {
         }
 
         private void loadProjectToolStripMenuItem_Click(object sender, EventArgs e) {
-            project = ProjectParser.Parse(Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\projects\\test\\project.xml"));
-            paneProject.SetItems(project.Stages);
+            var ofd = new VistaFolderBrowserDialog();
+            if (ofd.ShowDialog() == DialogResult.OK) {
+                var projectFilePath = Path.Combine(ofd.SelectedPath, "project.xml");
+                if (File.Exists(projectFilePath)) {
+                    ProjectPath = ofd.SelectedPath;
+                    project = ProjectParser.Parse(projectFilePath);
+                    paneProject.SetItems(project.Stages);
+                }
+                else MessageBox.Show("The provided folder doesn't appear to be a project folder.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void loadSaveTestToolStripMenuItem_Click(object sender, EventArgs e) {
